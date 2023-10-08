@@ -7,13 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
+    
+    var screen: LoginScreen?
+    
+    override func loadView() {
+        screen = LoginScreen()
+        view = screen
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
 
 }
 
